@@ -41,7 +41,7 @@ class UserService {
     newUser.isActive=isActive;
     newUser.age = age;
     newUser.todos = newTodos;
- 
+    console.log(newUser);
     return await this.userRepo.save(newUser);
     
   }
